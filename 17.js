@@ -1,13 +1,8 @@
-let name='shubham';
-let name1='vivk';
-let name2='vikash';
-let name3='praaksh'
+// 17. Write a program which tells the number of days in a month.
 
-function names(n){
-    console.log(n);
-}
 
-names(name)
-names(name1)
-names(name2)
-names(name3)
+const inputMonth = prompt("Enter the month to find the number of days in it");
+
+function getDaysInMonth (month, year) { 
+    return new Date(year, month, 0).getDate();
+  }
